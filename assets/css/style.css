@@ -104,6 +104,34 @@ h5{
         font-size: 12px;
     }
 }
+
+
+.loader {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e5eff1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader img {
+    width: 20%;
+}
+/* JS Class */
+.dispear {
+    animation: dispar 2s forwards;
+}
+
+@keyframes dispar {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
 /* ---------navber start------------- */
 nav{
     background: #999;
@@ -134,7 +162,15 @@ nav{
     color: black;
     box-shadow: 0px 0px 2px 3px #00000040;
 }
-
+.main_menu .navbar-toggler {
+    border: transparent;
+}
+.main_menu .navbar-toggler i {
+    font-size: 22px !important;
+}
+.main_menu .navbar-toggler:focus {
+    box-shadow: none;
+}
 /* ---------navber end------------- */
 
 .main_banner{
@@ -178,11 +214,11 @@ nav{
     font-size: 20px;
     margin-right: 10px;
 }
-.main_banner .banner_txt .search input::placeholder{
+input::placeholder{
     color: #8d0000;
     font-family: 'Satisfy', cursive;
 }
-.main_banner .banner_txt .search input{
+input{
     background: transparent;
     border: none;
     color: #fff;
@@ -640,3 +676,98 @@ nav{
 }
 /* ------------footer end--------------------- */
 /* =============================================================== */
+/*------------- go top------------- */
+.go_top {
+    position: fixed;
+    right: 1%;
+    bottom: 8%;
+    width: 5%;
+    cursor: pointer;
+    transform: scale(1);
+    transition: .4s all;
+    z-index: 999;
+    opacity: 0;
+}
+/* ======================================== */
+
+/* ===========================================================================
+==============================================================================
+========================== login page css ====================================
+==============================================================================
+============================================================================ */
+.login_main {
+    margin: 70px 0;
+}
+.login_main .login_img {
+    border: 7px solid #8d00002f;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+}
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+.login_footer a i ,
+.login_main .icon a i {
+    margin-right: 10px;
+    background: #8d00002f;
+    color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.login_main .form-control:focus {
+    box-shadow: none;
+}
+.login_main .form-check-input:focus {
+    box-shadow: none;
+}
+.login_footer a i:hover ,
+.login_main .icon a i:hover {
+    background: var(--blue);
+}
+.login_main .login_button {
+    background: #8d000063;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+}
+.login_footer {
+    background: #999;
+}
+
+
+/* ===========================================================================
+==============================================================================
+========================== signup page css ====================================
+==============================================================================
+============================================================================ */
+.form-check-input:focus ,
+.form-control:focus {
+    box-shadow: none;
+}
+.signup_button:hover ,
+.submit_button {
+    background: var(--bs-cyan);
+}
+.signup_button {
+    background: #8d00002f;
+    color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
