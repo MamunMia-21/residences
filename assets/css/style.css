@@ -164,6 +164,19 @@ nav{
 .main_menu .navbar-toggler:focus {
     box-shadow: none;
 }
+.main_menu .user_nav a i {
+    margin: 0 20px;
+    color: var(--red);
+    padding: 12px;
+    position: relative;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: rgb(255 255 255 / 43%) 3px 3px 6px 0px, rgb(106 106 106 / 38%) -3px -3px 6px 1px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
 @media(max-width: 767px){
     .main_menu .menu_item .nav-item .nav-link {
         margin-top: 10px !important;
@@ -510,6 +523,19 @@ input{
 }
 .vbox-child{
     width: 65%;
+}
+.vbox-close {
+    color: var(--red);
+}
+.vbox-next span ,
+.vbox-prev span {
+    border-top-color: var(--bs-cyan);
+    border-right-color: var(--bs-cyan);
+}
+@media(max-width: 767px){
+    .vbox-child {
+        width: 100%;
+    }
 }
 /* ------------product end--------------------- */
 /* =================================================== */

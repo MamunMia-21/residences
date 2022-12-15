@@ -99,10 +99,10 @@ new VenoBox({
 
 
 // --------> Animation <--------
-AOS.init({
-  once: true,
-  duration: 1500,
-  dealy: 100,
-  easing: "linear",
-});
+// AOS.init({
+//   once: true,
+//   duration: 1500,
+//   dealy: 100,
+//   easing: "linear",
+// });
 
