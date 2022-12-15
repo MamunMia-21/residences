@@ -47,6 +47,9 @@ h5{
     font-family: sans-serif;
     color: #222;
 }
+input {
+    text-transform: capitalize;
+}
 @media(max-width: 991px){
     p{
         line-height: 24px !important;
@@ -65,9 +68,6 @@ h5{
     }
 }   
 @media(max-width: 767px){
-    .main_menu .menu_icon {
-        width: 115px !important;
-    }
     p{
         font-size: 10px !important;
         line-height: 15px !important;
@@ -143,9 +143,21 @@ nav{
 }
 .main_menu .menu_icon{
     width: 145px;
+    padding: 10px !important;
+    border-radius: 12px;
+    box-shadow: rgb(255 255 255 / 43%) 3px 3px 6px 0px, rgb(106 106 106 / 38%) -3px -3px 6px 1px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
 }
 .main_menu .menu_item{
-    gap: 30px;
+    gap: 15px;
 }
 .main_menu .menu_item .nav-item .nav-link {
     font-size: 22px;
@@ -160,6 +172,14 @@ nav{
 }
 .main_menu .navbar-toggler i {
     font-size: 22px !important;
+    color: var(--red);
+    padding: 10px;
+    box-shadow: rgb(255 255 255 / 43%) 3px 3px 6px 0px, rgb(106 106 106 / 38%) -3px -3px 6px 1px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 .main_menu .navbar-toggler:focus {
     box-shadow: none;
@@ -177,9 +197,18 @@ nav{
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
 }
+@media(max-width: 991px) {
+    .main_menu .menu_item .nav-item .nav-link {
+        width: 130px;
+        text-align: center;
+    }
+}
 @media(max-width: 767px){
     .main_menu .menu_item .nav-item .nav-link {
         margin-top: 10px !important;
+    }
+    .main_menu .menu_icon {
+        width: 100px !important;
     }
 }
 /* ---------navber end------------- */
@@ -195,7 +224,6 @@ nav{
     padding: 120px 0 20px;
 }
 .main_banner .banner_txt h1 {
-    line-height: 90px;
     font-size: 60px;
     font-weight: 700;
     letter-spacing: 0.2px;
@@ -262,9 +290,9 @@ input{
 }
 @media(max-width: 991px){
     .main_banner .banner_txt h1 {
-        font-size: 40px;
-        line-height: normal;
-        height: 100px;
+    font-size: 35px;
+    line-height: normal;
+    height: 80px;
     }
     .main_banner .banner_img {
         padding-top: 70px;
@@ -275,8 +303,8 @@ input{
         padding-top: 40px;
     }
     .main_banner .banner_txt h1 {
-        font-size: 30px;
-        height: 75px;
+        font-size: 26px;
+        height: 70px;
     }
     .main_banner .banner_img {
         width: 245px;
@@ -413,7 +441,7 @@ input{
 .value_txt .accordion-item {
     border: none;
     background: transparent;
-    box-shadow: rgb(0 0 0 / 46%) 3px 3px 6px 0px inset, rgb(189 189 189 / 50%) -3px -3px 6px 1px inset;
+    box-shadow: rgb(0 0 0 / 22%) 3px 3px 6px 0px inset, rgb(189 189 189 / 50%) -3px -3px 6px 1px inset;
     border-radius: 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
@@ -846,7 +874,7 @@ input{
     -ms-border-radius: 14px;
     -o-border-radius: 14px;
 }
-.login_footer {
+footer {
     background: #6a36ca34;
 }
 @media(max-width: 575px){
@@ -860,6 +888,13 @@ input{
 ========================== signup page css ====================================
 ==============================================================================
 ============================================================================ */
+label {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    color: var(--red);
+    text-transform: capitalize;
+}
 .sign_up_back {
     background: #6a36ca34;
 }
@@ -879,4 +914,9 @@ input{
     -moz-border-radius: 14px;
     -ms-border-radius: 14px;
     -o-border-radius: 14px;
+}
+.acc_hve a {
+    color: var(--blue);
+    font-weight: 500;
+    text-transform: none;
 }
