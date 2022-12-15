@@ -635,7 +635,7 @@ input{
 }
 
 .about_part .about_img .about_img_overly a i:hover {
-    background: var(--red);
+    color: var(--bs-cyan);
 }
 .about_part .about_txt {
     font-family: sans-serif;
