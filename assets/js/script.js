@@ -88,7 +88,7 @@ $('.slider_main').slick({
           }
       ]
 });
-  
+  // --------> venobox <--------
 new VenoBox({
   selector: '.my-image-links',
   numeration: true,
@@ -98,82 +98,11 @@ new VenoBox({
 });
 
 
+// --------> Animation <--------
+AOS.init({
+  once: true,
+  duration: 1500,
+  dealy: 100,
+  easing: "linear",
+});
 
-
-// ========================================================================
-// ===================== login page js ====================================
-// ========================================================================
-
-let fNamejs = document.querySelector('#fName')
-let fNameErrjs = document.querySelector('#fNameErr')
-
-let buttonjs = document.querySelector('#buttons')
-
-buttonjs.onclick = function(e){
-  e.preventDefault ();
-  if(fNamejs.value == ""){
-    fNameErrjs.innerHTML = "what is first name !!"
-    fNameErrjs.style = ("color: red;")
-  }
-}
-
-// let fNamejs = document.querySelector("#fName")
-// let fNameErrjs = document.querySelector("#fNameErr")  
-// let lNamejs = document.querySelector("#lName")
-// let lNameErrjs = document.querySelector("#lNameErr")        
-// let Emailjs = document.querySelector("#Email")
-// let EmailErrjs = document.querySelector("#EmailErr")               
-// let Passwordjs = document.querySelector("#password")
-// let PasswordErrjs = document.querySelector("#passwordErr")               
-// let rPasswordjs = document.querySelector("#rpassword")
-// let rPasswordErrjs = document.querySelector("#rpasswordErr")
-
-// let buttonjs = document.querySelector("#button")
-// buttonjs.onclick = function(e){
-//     e.preventDefault ();
-//     if(fNamejs.value == ""){
-//         fNameErrjs.innerHTML = "What is your first Name !!"
-//         fNameErrjs.style = ("color: red;")
-//     }else if(lNamejs.value == ""){
-//         lNameErrjs.innerHTML = "What is your last Name !!"
-//         lNameErrjs.style =("color: red;")
-//     }else if(Emailjs.value == ""){
-//         EmailErrjs.innerHTML = "What is your Email !!"
-//         EmailErrjs.style =("color: red;")
-//     }else if(Passwordjs.value == ""){
-//         PasswordErrjs.innerHTML = "Type a Strong Password !!"
-//         PasswordErrjs.style =("color: red;")
-//     }else{
-//         confirm("your form is submited !!")
-//         location.reload()
-//     } 
-// }
-
-// $("#Email").change(function () {    
-//   var inputvalues = $(this).val();    
-//   var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;    
-//   if(!regex.test(inputvalues)){    
-//   alert("invalid email id");    
-//   return regex.test(inputvalues);    
-//   }    
-// });
-
-// $("#rpassword").change(function (){
-//   if(Passwordjs != rPasswordjs){
-//   alert("password not match")
-//   }
-// })
-
-
-// fNamejs.oninput= function(){
-//     fNameErrjs.innerHTML = ""
-// }
-// lNamejs.oninput= function(){
-//     lNameErrjs.innerHTML = ""
-// }
-// Emailjs.oninput= function(){
-//     EmailErrjs.innerHTML = ""
-// }
-// Passwordjs.oninput= function(){
-//     PasswordErrjs.innerHTML = ""
-// }

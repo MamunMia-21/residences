@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sign up</title>
      <!-- googlw font link -->
-     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
      <!-- bootstrap css link -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
      <!-- slick slider css link -->
@@ -15,6 +17,8 @@
      <link rel="stylesheet" href="assets/css/venobox.min.css">
        <!-- icon css link -->
      <link rel="stylesheet" href="assets/css/all.min.css">
+     <!-- aos animation css link -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
      <!-- main css link -->
      <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -23,7 +27,32 @@
   <div class="loader">
     <img src="assets/images/loader.gif" alt="loader">
   </div>
-<section class="text-center">
+     <!-- -----------navber strat-------------- -->
+     <nav class="navbar navbar-expand-lg main_menu">
+      <div class="container">
+        <a class="navbar-brand menu_icon" href="#">
+          <img class="w-100 img-fluid" src="assets/images/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu_item">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">account</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!-- -----------navber end-------------- -->
+  <!-- ======================================================== -->
+  <!-- signup -->
+  <section class="text-center">
     <!-- Background image -->
     <div class="p-5 bg-image" style="
           background-image: url('./assets/images/signup_img.jpg');
@@ -35,7 +64,7 @@
           background: hsla(0, 0%, 100%, 0.8);
           backdrop-filter: blur(30px);
           ">
-      <div class="card-body py-5 px-md-5">
+      <div class="card-body py-5 px-md-5 sign_up_back">
         <div class="row d-flex justify-content-center">
           <div class="col-lg-8">
             <h2 class="fw-bold mb-5">Sign up now</h2>
@@ -44,25 +73,25 @@
               <div class="row">
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="text" id="form3Example1" class="form-control" />
+                    <input type="text" id="form3Example1" class="form-control inside-shadow" />
                     <label class="form-label" for="form3Example1">First name</label>
                   </div>
                 </div>
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="text" id="form3Example2" class="form-control" />
+                    <input type="text" id="form3Example2" class="form-control inside-shadow" />
                     <label class="form-label" for="form3Example2">Last name</label>
                   </div>
                 </div>
               </div>
               <!-- Email input -->
               <div class="form-outline mb-4">
-                <input type="email" id="form3Example3" class="form-control" />
+                <input type="email" id="form3Example3" class="form-control inside-shadow" />
                 <label class="form-label" for="form3Example3">Email address</label>
               </div>
               <!-- Password input -->
               <div class="form-outline mb-4">
-                <input type="password" id="form3Example4" class="form-control" />
+                <input type="password" id="form3Example4" class="form-control inside-shadow" />
                 <label class="form-label" for="form3Example4">Password</label>
               </div>
               <!-- Checkbox -->
@@ -105,6 +134,8 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <!-- typed js link -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- aos js link -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- main js link -->
     <script src="assets/js/script.js"></script>
 </body>
