@@ -66,8 +66,8 @@ $('.partership_slider_main').slick({
 $('.slider_main').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 3000,
     arrows: true,
     prevArrow: '<i class="fa-solid fa-angles-left slide-prv-button"></i>',
     nextArrow: '<i class="fa-solid fa-angles-right slide-nxt-button"></i>',

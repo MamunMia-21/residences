@@ -351,7 +351,16 @@ input{
 /* =================================================== */
 /* -----------residences start------------------- */
 
-.slider_main .slider_part{
+.slider_main {
+    padding: 10px;
+    box-shadow: rgb(70 70 70 / 30%) 3px 3px 6px 0px inset, rgb(189 189 189 / 50%) -3px -3px 6px 1px inset;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.slider_main .slider_part {
     margin: 10px 25px;
     padding: 10px;
     border-radius: 12px;
@@ -359,9 +368,7 @@ input{
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
-}
-.slider_main .slider_part:hover{
-    box-shadow: 0px 0px 10px 6px rgba(0,0,0,0.2);
+    box-shadow: rgb(60 60 60 / 43%) 3px 3px 6px 0px, rgb(106 106 106 / 38%) -3px -3px 6px 1px;
 }
 .slider_main .slider_part img{
     border-radius: 12px;
@@ -381,7 +388,7 @@ input{
 }
 .slider_main .slide-prv-button{
     position: absolute;
-    top: -40px;
+    top: -60px;
     right: 20%;
     cursor: pointer;
     padding: 15px;
@@ -394,7 +401,7 @@ input{
 } 
 .slider_main .slide-nxt-button{
     position: absolute;
-    top: -40px;
+    top: -60px;
     right: 10%;
     cursor: pointer;
     padding: 15px;
@@ -409,7 +416,7 @@ input{
     .slider_main .slide-prv-button ,
     .slider_main .slide-nxt-button {
         padding: 7px;
-        top: -30px;
+        top: -50px;
     }
 }
 /* ------------residences end--------------------- */
@@ -535,7 +542,7 @@ input{
 .button {
     width: 100px;
     margin: 10px auto;
-    box-shadow: rgb(159 156 156 / 43%) 3px 3px 6px 0px, rgb(183 183 183 / 38%) -3px -3px 6px 1px;
+    box-shadow: rgb(237 237 237 / 53%) 3px 3px 6px 0px, rgb(126 123 123 / 38%) -3px -3px 6px 1px;
     text-align: center;
     border-radius: 14px;
     -webkit-border-radius: 14px;
